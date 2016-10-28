@@ -1,7 +1,6 @@
 <!--
 Copyright (c) 2016 Scott Armstrong & Nicholas Richu
 -->
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

@@ -1,3 +1,6 @@
+/**
+Copyright (c) 2016 Scott Armstrong & Nicholas Richu
+**/
 @media screen and (max-width: 400px) {
   body{
     border: 2.5px #0a1884 solid;
@@ -10,10 +13,10 @@
     font-size: 0.9em;
   }
 
-   h1 {
+  h1 {
     font-size: 1.1em;
     margin-top: 2em;
-   }
+  }
 
   html{
     width:100%;
@@ -28,22 +31,22 @@
   label{
     text-align: right;
   }
-  
+
   main {
     margin-left: 0;
   }
-  
+
   main p {
     font-size: 0.9em;
   }
 
   #submit-button {
+    font-size: 0.95em;
+    height: 12%;
     margin-left: 0;
     margin-top: 0.2em;
-    font-size: 0.95em;
-    width: 33.33%;
-    height: 12%;
     padding: 0.5em 0.3em;
     text-align: center;
+    width: 33.33%;
   }
 }

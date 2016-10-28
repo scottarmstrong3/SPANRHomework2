@@ -22,6 +22,11 @@ public class Calculate extends HttpServlet {
           HttpServletResponse response)
           throws ServletException, IOException {
 
+    String action = request.getParameter("action");
+    String url = "";
+      
+    if (action != null) {
+    
     NumberFormat numFormatter = NumberFormat.getCurrencyInstance();
     
     int interestRate = Integer.parseInt(request.getParameter("interest-rate"));
@@ -37,7 +42,11 @@ public class Calculate extends HttpServlet {
 
     request.setAttribute("investment", investment);
 
-    String url = "/calculations.jsp";
+    url = "/calculations.jsp";
+    } else {
+      
+      url = "/index.jsp";
+    }
 
     getServletContext()
             .getRequestDispatcher(url)
