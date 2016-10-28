@@ -1,0 +1,49 @@
+@media screen and (max-width: 400px) {
+  body{
+    border: 2.5px #0a1884 solid;
+    margin-top: 0.1em;
+    width: 95%;    
+  }
+
+  footer {
+    border-top: 2.5px #0a1884 solid;
+    font-size: 0.9em;
+  }
+
+   h1 {
+    font-size: 1.1em;
+    margin-top: 2em;
+   }
+
+  html{
+    width:100%;
+  }
+
+  input {
+    font-size: .85em;
+    height: 3em;
+    width: 86%;
+  }
+
+  label{
+    text-align: right;
+  }
+  
+  main {
+    margin-left: 0;
+  }
+  
+  main p {
+    font-size: 0.9em;
+  }
+
+  #submit-button {
+    margin-left: 0;
+    margin-top: 0.2em;
+    font-size: 0.95em;
+    width: 33.33%;
+    height: 12%;
+    padding: 0.5em 0.3em;
+    text-align: center;
+  }
+}

@@ -1,0 +1,60 @@
+body {
+  border: 3.5px #0a1884 solid;
+  font-family: Arial;
+  margin: 0 auto;
+  width: 80%
+}
+
+#error-content p, #error-content h1 {
+  margin-left: 10%;
+}
+
+#error-content p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+footer {
+  margin-top: 1em;
+  border-top: 3.5px #0a1884 solid;
+}
+
+footer p {
+  margin-left: 2em;
+}
+
+main p {
+  margin: .2em 0;
+}
+
+h1 {
+  color: #0a1884;
+  margin-left: 1.6em;
+}
+
+input {
+  border: .5px black solid;
+  width: 57%;
+}
+
+#jsp-content {
+  margin-left: 15%;
+}
+
+main {
+  margin-left: 4em;
+}
+
+label {
+  display: inline-block;
+  margin-right: .5em;
+  text-align: right;
+  width: 10em;
+}
+
+#submit-button {
+  background: lightgrey;
+  padding: 0.2em 2em;
+  margin-left: 15.3em;
+  width: 10em;
+}

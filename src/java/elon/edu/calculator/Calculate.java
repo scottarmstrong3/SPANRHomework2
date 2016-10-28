@@ -3,8 +3,9 @@
  */
 package elon.edu.calculator;
 
+import elon.edu.data.Investment;
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.text.NumberFormat;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,41 +18,37 @@ import javax.servlet.http.HttpServletResponse;
 public class Calculate extends HttpServlet {
 
   @Override
-    protected void doPost(HttpServletRequest request,
-            HttpServletResponse response)
-            throws ServletException, IOException {
-        
-      String action = request.getParameter("action");
-      String url = "";
-      
-        if (action != null) {
-          
-            url = "/subscribe.html";
-            
-            String firstName = request.getParameter("firstName");
-            String lastName = request.getParameter("lastName");
-            String email = request.getParameter("email");
-            String zipCode = request.getParameter("zipCode");
-            
-            System.out.println("firstName=" + firstName);
-            System.out.println("lastName=" + lastName);
-            System.out.println("email=" + email);
-            System.out.println("zipCode=" + zipCode);
-          
-        } else {
-          url = "/index.html";
-        }
-              
-       getServletContext()
-                .getRequestDispatcher(url)
-                .forward(request, response);
-    }
+  protected void doPost(HttpServletRequest request,
+          HttpServletResponse response)
+          throws ServletException, IOException {
+
+    NumberFormat numFormatter = NumberFormat.getCurrencyInstance();
     
-    @Override
-    protected void doGet(HttpServletRequest request,
-            HttpServletResponse response)
-            throws ServletException, IOException {
-        
-       doPost(request, response);
-    }
+    int interestRate = Integer.parseInt(request.getParameter("interest-rate"));
+    int years = Integer.parseInt(request.getParameter("years"));
+    int integerInvestmentAmount = Integer.parseInt(request.getParameter("investment-amount"));
+    
+    String futureValue = numFormatter.format(integerInvestmentAmount * interestRate * .01 * years + integerInvestmentAmount);
+    String investmentAmount = numFormatter.format(integerInvestmentAmount);
+   
+    System.out.println(investmentAmount);
+    
+    Investment investment = new Investment(investmentAmount, interestRate, years, futureValue);
+
+    request.setAttribute("investment", investment);
+
+    String url = "/calculations.jsp";
+
+    getServletContext()
+            .getRequestDispatcher(url)
+            .forward(request, response);
+  }
+
+  @Override
+  protected void doGet(HttpServletRequest request,
+          HttpServletResponse response)
+          throws ServletException, IOException {
+
+    doPost(request, response);
+  }
 }
