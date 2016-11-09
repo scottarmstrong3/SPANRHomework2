@@ -26,19 +26,14 @@ public class Calculate extends HttpServlet {
     String url = "";
       
     if (action != null) {
-    
-    NumberFormat numFormatter = NumberFormat.getCurrencyInstance();
-    
+        
     int interestRate = Integer.parseInt(request.getParameter("interest-rate"));
     int years = Integer.parseInt(request.getParameter("years"));
-    int integerInvestmentAmount = Integer.parseInt(request.getParameter("investment-amount"));
-    
-    String futureValue = numFormatter.format(integerInvestmentAmount * interestRate * .01 * years + integerInvestmentAmount);
-    String investmentAmount = numFormatter.format(integerInvestmentAmount);
+    int investmentAmount = Integer.parseInt(request.getParameter("investment-amount"));
    
     System.out.println(investmentAmount);
     
-    Investment investment = new Investment(investmentAmount, interestRate, years, futureValue);
+    Investment investment = new Investment(investmentAmount, interestRate, years);
 
     request.setAttribute("investment", investment);
 

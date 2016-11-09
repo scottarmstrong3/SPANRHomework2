@@ -3,15 +3,11 @@
 Copyright (c) 2016 Scott Armstrong & Nicholas Richu
 -->
 <html>
-  <head>
-    <title>SPANRHomework2</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/indexstyles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <jsp:include page="/includes/header.html" />
+  <jsp:include page="/includes/header.html" />
+  <body id="index">
+    <header>
+      <h1>Future Value Calculator</h1>
+    </header>
     <main>
       <form action="calculate" method="post">
         <input type="hidden" name="action" value="calculate">        

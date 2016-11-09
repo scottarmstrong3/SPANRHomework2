@@ -62,3 +62,62 @@ label {
   padding: 0.2em 2em;
   width: 10em;
 }
+
+@media screen and (max-width: 400px) {
+  body{
+    border: 2.5px #0a1884 solid;
+    margin-top: 0.1em;
+    width: 95%;    
+  }
+
+  footer {
+    border-top: 2.5px #0a1884 solid;
+    font-size: 0.9em;
+  }
+
+  #index h1 {
+    font-size: 1.5em;
+  }
+  
+  #calc h1 {
+    font-size: 1.1em;
+    margin-top: 2em;
+  }
+
+  html{
+    width:100%;
+  }
+
+  input {
+    font-size: .85em;
+    height: 3em;
+    width: 86%;
+  }
+
+  #index label{
+    text-align: left;
+  }
+  
+  #calc label {
+    text-align: right;
+  }
+
+  #calc main {
+    margin-left: 0;
+  }
+  
+  #calc main p {
+    font-size: 0.9em;
+  }
+
+  #submit-button {
+    font-size: 0.95em;
+    height: 12%;
+    margin-left: 0;
+    margin-top: 0.2em;
+    padding: 0.5em 0.3em;
+    text-align: center;
+    width: 33.33%;
+  }
+}
+

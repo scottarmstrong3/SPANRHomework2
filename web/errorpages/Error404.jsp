@@ -3,12 +3,7 @@
 Copyright (c) 2016 Scott Armstrong & Nicholas Richu
 -->
 <html>
-  <head>
-    <title>404 Error</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
+  <jsp:include page="/includes/header.html" />
   <body>
     <div id="error-content">
     <h1>404 Error</h1>
