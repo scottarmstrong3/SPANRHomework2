@@ -10,12 +10,11 @@ Copyright (c) 2016 Scott Armstrong & Nicholas Richu
       <h1>Future Value Calculator</h1>
     </header>
     <main>
-      <jsp:useBean id="investment" scope="request" class="elon.edu.data.Investment" />
       <div id="jsp-content">
-        <p><label>Investment Amount:</label><span><jsp:getProperty name="investment" property="investmentAmount" /></span></p>
-        <p><label>Yearly Interest Rate:</label><span><jsp:getProperty name="investment" property="interestRate" /></span></p>
-        <p><label>Number of Years:</label><span><jsp:getProperty name="investment" property="years" /></span></p>
-        <p><label>Future Value:</label><span><jsp:getProperty name="investment" property="futureValue" /></span></p>
+        <p><label>Investment Amount:</label><span>${investment.investmentAmount}</span></p>
+        <p><label>Yearly Interest Rate:</label><span>${investment.interestRate}</span></p>
+        <p><label>Number of Years:</label><span>${investment.years}</span></p>
+        <p><label>Future Value:</label><span>${investment.futureValue}</span></p>
       </div>
     </main>
     <jsp:include page="/includes/footer.html" />
