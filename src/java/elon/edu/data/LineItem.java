@@ -21,34 +21,19 @@ public class LineItem implements Serializable{
     this.value = value;
   }
 
-  /**
-   * @return the year
-   */
   public int getYear() {
     return year;
   }
 
-  /**
-   * @param year the year to set
-   */
   public void setYear(int year) {
     this.year = year;
   }
 
-  /**
-   * @return the value
-   */
   public double getValue() {
     return value;
   }
 
-  /**
-   * @param value the value to set
-   */
   public void setValue(double value) {
     this.value = value;
   }
-  
-  
-  
 }

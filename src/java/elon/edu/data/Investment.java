@@ -42,10 +42,14 @@ public class Investment implements Serializable{
   public ArrayList<LineItem> getFutureValues(){
     
     futureValues = new ArrayList<LineItem>();
-        
+    
+    double currentInvestmentAmount  = investmentAmount;
+    
     for (int i = 0; i < years; i ++) {
       
-      futureValues.add(new LineItem(i+1, investmentAmount * interestRate * .01 * (i + 1) + investmentAmount));
+      currentInvestmentAmount = currentInvestmentAmount * interestRate * .01 + currentInvestmentAmount;
+      
+      futureValues.add(new LineItem(i+1, currentInvestmentAmount));
     }
     
     return futureValues;

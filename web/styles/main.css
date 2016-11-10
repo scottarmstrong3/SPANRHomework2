@@ -41,7 +41,7 @@ input {
   width: 57%;
 }
 
-#jsp-content {
+#index #jsp-content {
   margin-left: 15%;
 }
 
@@ -56,11 +56,37 @@ label {
   width: 10em;
 }
 
+#calc label {
+  text-align: left;
+}
+
+span {
+  vertical-align: top;
+}
+
 #submit-button {
   background: lightgrey;
   margin-left: 15.3em;
   padding: 0.2em 2em;
   width: 10em;
+}
+
+td:first-child {
+  text-align: right;
+  padding-right: 4em;
+}
+
+td:last-child {
+  text-align: left;
+}
+
+th:first-child {
+  padding-right: 4em;
+  text-align: right;
+}
+
+th:last-child {
+  text-align: left;
 }
 
 @media screen and (max-width: 400px) {
@@ -78,9 +104,9 @@ label {
   #index h1 {
     font-size: 1.5em;
   }
-  
+
   #calc h1 {
-    font-size: 1.1em;
+    font-size: 1.5em;
     margin-top: 2em;
   }
 
@@ -94,20 +120,25 @@ label {
     width: 86%;
   }
 
-  #index label{
+  #calc label{
     text-align: left;
-  }
-  
-  #calc label {
-    text-align: right;
+    width: 49%;
   }
 
   #calc main {
     margin-left: 0;
   }
-  
+
   #calc main p {
     font-size: 0.9em;
+  }
+
+  #index label {
+    text-align: left;
+  }
+  
+  #jsp-content {
+    margin-left: 15%;
   }
 
   #submit-button {
