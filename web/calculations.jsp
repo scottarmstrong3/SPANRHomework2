@@ -12,9 +12,9 @@ Copyright (c) 2016 Scott Armstrong & Aidan Draper
     </header>
     <main>
       <div id="jsp-content">
-        <p><label>Investment Amount:</label><span><elon:currencyFormat numberToFormat="${investment.investmentAmount}"/></span></p>
-        <p><label>Yearly Interest Rate:</label><span>${investment.interestRate}</span></p>
-        <p><label>Number of Years:</label><span>${investment.years}</span></p>
+        <p><label>Investment Amount&#58;</label><span><elon:currencyFormat numberToFormat="${investment.investmentAmount}"/></span></p>
+        <p><label>Yearly Interest Rate&#58;</label><span>${investment.interestRate}</span></p>
+        <p><label>Number of Years&#58;</label><span>${investment.years}</span></p>
         <table>
           <tr>
             <th>Year</th>
@@ -27,6 +27,7 @@ Copyright (c) 2016 Scott Armstrong & Aidan Draper
             </tr>
           </elon:futureValueDisplay>
         </table>
+        <a href="calculate">Return to Calculator</a>
       </div>
     </main>
     <jsp:include page="/includes/footer.html" />
