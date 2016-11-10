@@ -5,7 +5,6 @@ package elon.edu.calculator;
 
 import elon.edu.data.Investment;
 import java.io.IOException;
-import java.text.NumberFormat;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -26,9 +25,7 @@ public class Calculate extends HttpServlet {
     int interestRate = Integer.parseInt(request.getParameter("interest-rate"));
     int years = Integer.parseInt(request.getParameter("years"));
     int investmentAmount = Integer.parseInt(request.getParameter("investment-amount"));
-   
-    System.out.println(investmentAmount);
-    
+       
     Investment investment = new Investment(investmentAmount, interestRate, years);
 
     request.setAttribute("investment", investment);

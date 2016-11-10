@@ -4,22 +4,23 @@
 package elon.edu.data;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class Investment implements Serializable{
   
   private double investmentAmount;
-  private int interestRate;
+  private double interestRate;
   private int years;
-  private double futureValue;
+  private ArrayList<LineItem> futureValues;
   
   public Investment() {
     investmentAmount = 0;
     interestRate = 0;
     years = 0;
-    futureValue = 0;
+    futureValues = new ArrayList<LineItem>();
   }
   
-  public Investment(double investmentAmount, int interestRate, int years) {
+  public Investment(double investmentAmount, double interestRate, int years) {
     this.investmentAmount = investmentAmount;
     this.interestRate = interestRate;
     this.years = years;
@@ -34,16 +35,23 @@ public class Investment implements Serializable{
     this.investmentAmount = investmentAmount;
   }
 
-  public int getInterestRate() {
+  public double getInterestRate() {
     return interestRate;
   }
   
-  public double getFutureValue(){
+  public ArrayList<LineItem> getFutureValues(){
     
-    return investmentAmount * interestRate * .01 * years + investmentAmount;
+    futureValues = new ArrayList<LineItem>();
+        
+    for (int i = 0; i < years; i ++) {
+      
+      futureValues.add(new LineItem(i+1, investmentAmount * interestRate * .01 * (i + 1) + investmentAmount));
+    }
+    
+    return futureValues;
   }
 
-  public void setInterestRate(int interestRate) {
+  public void setInterestRate(double interestRate) {
     this.interestRate = interestRate;
   }
   
@@ -54,7 +62,7 @@ public class Investment implements Serializable{
   public void setYears(int years) {
     this.years = years;
   }
-  public void setFutureValue(double futureValue){
-    this.futureValue= futureValue;
+  public void setFutureValue(ArrayList<LineItem> futureValues){
+    this.futureValues= futureValues;
   }
 }

@@ -3,12 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/scottarmstrong/Documents/ComputerScienceIII/Homework/homework2/web/index.jsp</file>
-            <file>file:/Users/scottarmstrong/Documents/ComputerScienceIII/Homework/homework2/web/calculations.jsp</file>
-            <file>file:/Users/scottarmstrong/Documents/ComputerScienceIII/Homework/homework2/web/includes/footer.html</file>
-            <file>file:/Users/scottarmstrong/Documents/ComputerScienceIII/Homework/homework2/src/java/elon/edu/data/Investment.java</file>
-            <file>file:/Users/scottarmstrong/Documents/ComputerScienceIII/Homework/homework2/web/WEB-INF/tlds/tags.tld</file>
-            <file>file:/Users/scottarmstrong/Documents/ComputerScienceIII/Homework/homework2/src/java/elon/edu/tags/currencyFormat.java</file>
+            <file>file:/Users/scottarmstrong/Documents/ComputerScienceIII/Homework/homework3/web/calculations.jsp</file>
+            <file>file:/Users/scottarmstrong/Documents/ComputerScienceIII/Homework/homework3/web/WEB-INF/tlds/tags.tld</file>
+            <file>file:/Users/scottarmstrong/Documents/ComputerScienceIII/Homework/homework3/web/index.jsp</file>
+            <file>file:/Users/scottarmstrong/Documents/ComputerScienceIII/Homework/homework3/src/java/elon/edu/tags/FutureValueDisplay.java</file>
+            <file>file:/Users/scottarmstrong/Documents/ComputerScienceIII/Homework/homework3/src/java/elon/edu/data/Investment.java</file>
+            <file>file:/Users/scottarmstrong/Documents/ComputerScienceIII/Homework/homework3/src/java/elon/edu/data/LineItem.java</file>
+            <file>file:/Users/scottarmstrong/Documents/ComputerScienceIII/Homework/homework3/src/java/elon/edu/calculator/Calculate.java</file>
         </group>
     </open-files>
 </project-private>
