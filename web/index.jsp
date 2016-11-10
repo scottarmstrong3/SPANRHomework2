@@ -11,8 +11,8 @@ Copyright (c) 2016 Scott Armstrong & Aidan Draper
     <main>
       <form action="calculate" method="post">
         <input type="hidden" name="action" value="calculate">        
-        <p><label for="investment-amount">Investment Amount&#58;</label><input value="${investment.investmentAmount}" name="investment-amount" id="investment-amount" type="text" title="Enter investment amount here" pattern="^[0-9]+$" autofocus required></p>
-        <p><label for="interest-rate">Yearly Interest Rate&#58;</label><input value="${investment.interestRate}" name="interest-rate" id="interest-rate" type="text" title="Enter yearly interest rate" pattern="^[0-9]+$" required></p>
+        <p><label for="investment-amount">Investment Amount&#58;</label><input value="${investment.investmentAmount}" name="investment-amount" id="investment-amount" type="text" title="Enter investment amount here" pattern="^[0-9]+.?[0-9]*$" autofocus required></p>
+        <p><label for="interest-rate">Yearly Interest Rate&#58;</label><input value="${investment.interestRate}" name="interest-rate" id="interest-rate" type="text" title="Enter yearly interest rate" pattern="^[0-9]+.?[0-9]*$" required></p>
         <p><label for="years">Number of Years&#58;</label><input value="${scopeRequest.investment.years}" name="years" id="years" type="text" title="Enter number of years" placeholder="Integer number of years" pattern="^[0-9]+$" required></p>
         <input id="submit-button" type="submit" value="Calculate">
       </form>
