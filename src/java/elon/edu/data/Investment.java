@@ -4,17 +4,13 @@
 package elon.edu.data;
 
 import java.io.Serializable;
-import java.text.NumberFormat;
 
-/**
- * @author scottarmstrong, nickrichu
- */
 public class Investment implements Serializable{
   
-  private int investmentAmount;
+  private double investmentAmount;
   private int interestRate;
   private int years;
-  private int futureValue;
+  private double futureValue;
   
   public Investment() {
     investmentAmount = 0;
@@ -23,19 +19,18 @@ public class Investment implements Serializable{
     futureValue = 0;
   }
   
-  public Investment(int investmentAmount, int interestRate, int years) {
+  public Investment(double investmentAmount, int interestRate, int years) {
     this.investmentAmount = investmentAmount;
     this.interestRate = interestRate;
     this.years = years;
   }
 
-  public String getInvestmentAmount() {
-    NumberFormat numFormatter = NumberFormat.getCurrencyInstance();
+  public double getInvestmentAmount() {
     
-    return numFormatter.format(investmentAmount);
+    return investmentAmount;
   }
 
-  public void setInvestmentAmount(int investmentAmount) {
+  public void setInvestmentAmount(double investmentAmount) {
     this.investmentAmount = investmentAmount;
   }
 
@@ -43,11 +38,9 @@ public class Investment implements Serializable{
     return interestRate;
   }
   
-  public String getFutureValue(){
+  public double getFutureValue(){
     
-    NumberFormat numFormatter = NumberFormat.getCurrencyInstance();
-    
-    return numFormatter.format(investmentAmount * interestRate * .01 * years + investmentAmount);
+    return investmentAmount * interestRate * .01 * years + investmentAmount;
   }
 
   public void setInterestRate(int interestRate) {
@@ -61,7 +54,7 @@ public class Investment implements Serializable{
   public void setYears(int years) {
     this.years = years;
   }
-  public void setFutureValue(int futureValue){
+  public void setFutureValue(double futureValue){
     this.futureValue= futureValue;
   }
 }
