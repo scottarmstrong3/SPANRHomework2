@@ -15,7 +15,18 @@ Copyright (c) 2016 Scott Armstrong & Aidan Draper
         <p><label>Investment Amount:</label><span><elon:currencyFormat numberToFormat="${investment.investmentAmount}"/></span></p>
         <p><label>Yearly Interest Rate:</label><span>${investment.interestRate}</span></p>
         <p><label>Number of Years:</label><span>${investment.years}</span></p>
-        <p><label>Future Value:</label><span><elon:currencyFormat numberToFormat="${investment.futureValue}"/></span></p>
+        <table>
+          <tr>
+            <th>Year</th>
+            <th>Value</th>
+          </tr>
+          <elon:futureValueDisplay futureValueList="${investment.futureValues}">
+            <tr>
+              <td>${year}</td>
+              <td><elon:currencyFormat numberToFormat="${value}" /></td>
+            </tr>
+          </elon:futureValueDisplay>
+        </table>
       </div>
     </main>
     <jsp:include page="/includes/footer.html" />
