@@ -3,10 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/scottarmstrong/Documents/ComputerScienceIII/Homework/homework3/web/calculations.jsp</file>
-            <file>file:/Users/scottarmstrong/Documents/ComputerScienceIII/Homework/homework3/web/index.jsp</file>
-            <file>file:/Users/scottarmstrong/Documents/ComputerScienceIII/Homework/homework3/src/java/elon/edu/data/LineItem.java</file>
-            <file>file:/Users/scottarmstrong/Documents/ComputerScienceIII/Homework/homework3/web/styles/main.css</file>
+            <file>file:/Users/Draper/Documents/Sophomore_Year/ComSci3/SPANRHomework2/web/styles/main.css</file>
+            <file>file:/Users/Draper/Documents/Sophomore_Year/ComSci3/SPANRHomework2/src/java/elon/edu/data/Investment.java</file>
+            <file>file:/Users/Draper/Documents/Sophomore_Year/ComSci3/SPANRHomework2/web/calculations.jsp</file>
+            <file>file:/Users/Draper/Documents/Sophomore_Year/ComSci3/SPANRHomework2/src/java/elon/edu/calculator/Calculate.java</file>
+            <file>file:/Users/Draper/Documents/Sophomore_Year/ComSci3/SPANRHomework2/src/java/elon/edu/tags/CurrencyFormat.java</file>
+            <file>file:/Users/Draper/Documents/Sophomore_Year/ComSci3/SPANRHomework2/src/java/elon/edu/tags/FutureValueDisplay.java</file>
+            <file>file:/Users/Draper/Documents/Sophomore_Year/ComSci3/SPANRHomework2/web/WEB-INF/web.xml</file>
+            <file>file:/Users/Draper/Documents/Sophomore_Year/ComSci3/SPANRHomework2/web/index.jsp</file>
         </group>
     </open-files>
 </project-private>
