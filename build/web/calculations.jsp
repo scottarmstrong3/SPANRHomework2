@@ -1,5 +1,5 @@
 <!--
-Copyright (c) 2016 Scott Armstrong & Nicholas Richu
+Copyright (c) 2016 Scott Armstrong & Aidan Draper
 -->
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

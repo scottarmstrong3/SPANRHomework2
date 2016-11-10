@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 Scott Armstrong & Nicholas Richu
+ * Copyright (c) 2016 Scott Armstrong & Aidan Draper
  */
 package elon.edu.data;
 

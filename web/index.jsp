@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-Copyright (c) 2016 Scott Armstrong & Nicholas Richu
+Copyright (c) 2016 Scott Armstrong & Aidan Draper
 -->
 <html>
   <jsp:include page="/includes/header.html" />
