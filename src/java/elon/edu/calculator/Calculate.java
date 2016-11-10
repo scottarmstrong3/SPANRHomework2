@@ -24,9 +24,9 @@ public class Calculate extends HttpServlet {
     
     if (action != null) {
         
-    int interestRate = Integer.parseInt(request.getParameter("interest-rate"));
+    double interestRate = Double.parseDouble(request.getParameter("interest-rate"));
     int years = Integer.parseInt(request.getParameter("years"));
-    int investmentAmount = Integer.parseInt(request.getParameter("investment-amount"));
+    double investmentAmount = Double.parseDouble(request.getParameter("investment-amount"));
        
     Investment investment = new Investment(investmentAmount, interestRate, years);
     
