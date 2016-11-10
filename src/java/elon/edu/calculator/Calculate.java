@@ -9,6 +9,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 
 public class Calculate extends HttpServlet {
 
@@ -19,7 +21,7 @@ public class Calculate extends HttpServlet {
 
     String action = request.getParameter("action");
     String url = "";
-      
+    
     if (action != null) {
         
     int interestRate = Integer.parseInt(request.getParameter("interest-rate"));
@@ -27,9 +29,13 @@ public class Calculate extends HttpServlet {
     int investmentAmount = Integer.parseInt(request.getParameter("investment-amount"));
        
     Investment investment = new Investment(investmentAmount, interestRate, years);
-
+    
     request.setAttribute("investment", investment);
-
+    
+    Investment lastInvestment = new Investment(investmentAmount, interestRate, 0);
+    HttpSession session = request.getSession();
+    session.setAttribute("investment",lastInvestment);
+    
     url = "/calculations.jsp";
     } else {
       
